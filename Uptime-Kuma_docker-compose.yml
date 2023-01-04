@@ -1,0 +1,19 @@
+# Uptime-Kuma
+# A "self-hosted monitoring tool like 'Uptime Robot'."
+#
+# Modifed by justinKocian from louislam
+# GitHub: https://raw.githubusercontent.com/louislam/uptime-kuma/master/docker/docker-compose.yml
+
+version: '3.3'
+
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    container_name: uptime-kuma
+    volumes:
+      - ./uptime-kuma-data:/app/data
+    ports:
+      - 3001:3001  # <Host Port>:<Container Port>
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
