@@ -4,7 +4,7 @@
 # Modifed from official mattermost/focalboard repo
 # GitHub: https://github.com/mattermost/focalboard
 # 
-# Personal version:
+# Personal version: https://raw.githubusercontent.com/justinKocian/compose-repo/main/Focalboard_docker-compose.yml
 
 version: "3"
 services:
